@@ -14,9 +14,11 @@ alias hide='defaults write com.apple.finder AppleShowAllFiles FALSE;
 killall Finder'
 
 # OneDrive Workspace
-alias work='cd /Users/Kelby/OneDrive/Development\ Workspaces'
+alias work='cd /Users/Kelby/OneDrive/Development'
 
 # PSU VPN Login IST411
 alias ist411='ssh KelbyChen@oz-ist-linux-fa17-411.abington.psu.edu -p 101'
 
+# AWS Sync excluding DS files
+alias sync='aws s3 sync . s3://erp.prototype.psu --exclude '*.DS_Store''
 export PATH
